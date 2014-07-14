@@ -8,7 +8,7 @@ module Squall
     # Returns an Array.
     def list(vm_id)
       response = request(:get, "/virtual_machines/#{vm_id}/firewall_rules.json")
-      response.collect { |firewall_rule| user['firewall_rule'] }
+      response.collect { |firewall_rule| firewall_rule['firewall_rule'] }
     end
 
     # Public: Create a firewall rule for a virtual machine.
