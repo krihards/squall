@@ -29,6 +29,7 @@ module Squall
   autoload :HypervisorZone, 'squall/hypervisor_zone'
   autoload :Disk,           'squall/disk'
   autoload :Backup,         'squall/backup'
+  autoload :NetworkInterface, 'squall/network_interface' 
 
   extend self
 
